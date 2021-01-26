@@ -4,7 +4,7 @@ services:
   app:
     tty: true
     build: .
-    image: barber:latest
+    image: arcgisdocker:latest
     expose:
       - "8080"
     ports:

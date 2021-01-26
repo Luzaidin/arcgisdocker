@@ -8,6 +8,9 @@ import options from '../APIVersion'
 
 export default {
   name: 'SceneView',
+  mounted () {
+    this.createScene()
+  },
   methods: {
     createScene () {
       loadModules([
@@ -28,11 +31,7 @@ export default {
         console.log('sceneView', sceneView)
       })
     }
-  },
-  mounted () {
-    this.createScene()
   }
-
 }
 </script>
 
